@@ -1,20 +1,5 @@
 # VANGUARD-Guard · Cross-Functional Enterprise AI Playbook
 
-[![Tests](https://github.com/TAM-DS/VANGUARD-Guard/actions/workflows/ci.yml/badge.svg)](https://github.com/TAM-DS/VANGUARD-Guard/actions/workflows/ci.yml)
-
-## Validation and review
-
-**November 12, 2026:** 34 tests passed locally on Python 3.12. CI runs the suite on Python 3.11, 3.12, and 3.13; use the badge/run link for current remote results.
-
-Assessment completeness; duplicate-category HIGH risk preservation; exact tool deletion; persistence/upsert; and a Streamlit registration-to-new-session test.
-
-```bash
-python -m pip install -r requirements.txt pytest
-python -m pytest -q
-```
-
-This remains a local, single-user governance workbench. It does not authenticate approvers, authorize deployment, or monitor models.
-
 ### Your organization has an AI strategy. Can it prove who's accountable for the AI already in use?
 
 **Inventory the tools. Identify the risks. Name the owners. Make oversight visible.**
@@ -26,6 +11,23 @@ AI adoption is not the same as AI governance. A policy alone cannot tell an orga
 > **Public Edition · VANGUARD-Guard v1.1 available**
 >
 > A working **local, single-user** application with SQLite persistence and tested governance rules. **Not a production-ready, multi-user compliance or audit system.** Use synthetic records only; do not enter real employee or confidential client information.
+
+---
+
+## Validation and review
+
+[![Tests](https://github.com/TAM-DS/vanguard-guard/actions/workflows/ci.yml/badge.svg)](https://github.com/TAM-DS/vanguard-guard/actions/workflows/ci.yml)
+
+**November 12, 2026:** 34 tests passed locally on Python 3.12. CI runs the suite on Python 3.11, 3.12, and 3.13; use the badge/run link for current remote results.
+
+Assessment completeness; duplicate-category HIGH risk preservation; exact tool deletion; persistence/upsert; and a Streamlit registration-to-new-session test.
+
+```bash
+python -m pip install -r requirements.txt pytest
+python -m pytest -q
+```
+
+This remains a local, single-user governance workbench. It does not authenticate approvers, authorize deployment, or monitor models.
 
 ---
 
@@ -69,7 +71,7 @@ Different teams face different requirements:
 
 This project is a **starting point, not a one-size-fits-all mandate**. Its seven-category methodology is an example of a consistent baseline; adopting organizations must independently decide which additional assessments, controls, laws, or approvals apply to their use cases.
 
-**Make it yours:** [Browse the source](https://github.com/TAM-DS/VANGUARD-Guard) · [Download ZIP](https://github.com/TAM-DS/VANGUARD-Guard/archive/refs/heads/main.zip) · [Suggest an improvement](https://github.com/TAM-DS/VANGUARD-Guard/issues)
+**Make it yours:** [Browse the source](https://github.com/TAM-DS/vanguard-guard) · [Download ZIP](https://github.com/TAM-DS/vanguard-guard/archive/refs/heads/main.zip) · [Suggest an improvement](https://github.com/TAM-DS/vanguard-guard/issues)
 
 Released under the [MIT License](LICENSE): you can use, modify, and redistribute the software, including commercially, provided you follow the license terms. **Do not use actual confidential HR or client data in the current local app**, and review security, privacy, and regulatory requirements before organizational deployment.
 
@@ -129,7 +131,7 @@ This toolkit is **vendor-neutral** and does not require purchasing an enterprise
 **The application source, dependencies, and tests are published in this repository.** The following commands clone and run the local v1.1 application:
 
 ```bash
-git clone https://github.com/TAM-DS/VANGUARD-Guard.git
+git clone https://github.com/TAM-DS/vanguard-guard.git
 cd VANGUARD-Guard
 
 python3 -m venv .venv
@@ -191,7 +193,7 @@ The goal is a **useful, approachable governance tool that improves through real-
 
 **Engineering principle:** make the basic workflow dependable, validate the controls, and expand only when users have a demonstrated need. Public release notes will distinguish *implemented and tested*, *in progress*, and *planned*.
 
-**Want to help shape it?** Open a [GitHub Issue](https://github.com/TAM-DS/VANGUARD-Guard/issues) with a use case, bug report, accessibility improvement, or feature suggestion. Please do not post sensitive employee or client information.
+**Want to help shape it?** Open a [GitHub Issue](https://github.com/TAM-DS/vanguard-guard/issues) with a use case, bug report, accessibility improvement, or feature suggestion. Please do not post sensitive employee or client information.
 
 ### Future enhancement: AI Spend & Value
 
